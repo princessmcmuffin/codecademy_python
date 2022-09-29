@@ -2,13 +2,13 @@ weight = 4.8
 
 #Ground Shipping
 if weight <= 2:
-  ground_cost = 20 + (weight * 1.5)
+  ground_cost = round(20 + (weight * 1.5),2)
 elif weight <= 6:
-  ground_cost = 20 + (weight * 3)
+  ground_cost = round(20 + (weight * 3),2)
 elif weight <= 10:
-  ground_cost = 20 + (weight * 4)
+  ground_cost = round(20 + (weight * 4),2)
 else:
-  ground_cost = 20 + (weight * 4.75)
+  ground_cost = round(20 + (weight * 4.75),2)
 
 
 print("Ground cost is: " + str(ground_cost))
@@ -20,13 +20,13 @@ print("Premium cost is: " + str(premium_cost))
 
 #Drone Shipping
 if weight <= 2:
-  drone_cost = weight * 4.5
+  drone_cost = round(weight * 4.5,2)
 elif weight <= 6:
-  drone_cost = weight * 9
+  drone_cost = round(weight * 9,2)
 elif weight <= 10:
-  drone_cost = weight * 12
+  drone_cost = round(weight * 12,2)
 else:
-  drone_cost = weight * 14.25
+  drone_cost = round(weight * 14.25,2)
 
 print("Drone cost is: " + str(drone_cost))
 
